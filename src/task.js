@@ -20,8 +20,15 @@ class Task {
     _addWrapper() {
         this.wrapper.className = 'input-wrapper'
         this.wrapper.classList.add('active');
-        this.wrapper.appendChild(this.input);
-        this.wrapper.appendChild(this.label);
+        const checkItems = document.createElement('div');
+        checkItems.className = 'check-items';
+        checkItems.appendChild(this.input);
+        checkItems.appendChild(this.label);
+        this.wrapper.appendChild(checkItems)
+        const date = document.createElement('div');
+        date.classList = 'date'
+        date.textContent = '12 Nov';
+        this.wrapper.appendChild(date)
         this._addContainer();
     }
 

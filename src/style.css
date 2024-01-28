@@ -119,13 +119,20 @@ input[type='submit']{
     color: white;
 }
 
-.input-wrapper{
+.check-items{
     padding-left: 1.5rem;
     display: flex;
     gap: 1rem;
     align-items: center;
 }
+.input-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
 
+.date{
+    padding-right: 2rem;
+}
 input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;

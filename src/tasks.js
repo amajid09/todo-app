@@ -1,8 +1,8 @@
 import { Task } from "./task";
 class Tasks {
     constructor() {
-        this.tasks = [new Task('Complete online Javascript'), new Task('Complete online Javascript'),
-        new Task('Complete online Javascript'), new Task('Complete online Javascript'), new Task('Complete online Javascript')]
+        this.tasks = [new Task('Complete online Javascript'), new Task('Study web design'),
+        new Task('Daily Exercise'), new Task('learn One Concept'), new Task('10 push ups')]
     }
 
     addAllTasks() {
