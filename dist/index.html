@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div id="top-background">
+      <div class="top-wrapper">
+        <div class="heading-wrapper">   
+          <div class="heading">
+              <h1>TODO</h1>
+            </div>
+            <div class="toggle-theme">
+              <button id="toggle">
+                <img src="./images/icon-sun.svg" alt="">
+              </button>
+            </div>
+        </div>
+        <div class="create-table">
+          <div class="table-wrapper">
+            <form action="/index.html" id="create" >
+              <input type="submit" value="+">
+              <input class="" type="text" name="task" placeholder="Create a new todo..">
+            </form>
+            </div>
+          </div>
+    </div>
+    </div>
+
+    <div id="bottom-background">
+      <div class="bottom-wrapper">
+
+        <div id="table">
+        </div>
+        <div class="info-container">
+            <div class="info-container-wrapper">
+            <div class="track-items"><p id="items-uncompleted">4 items left</p></div>
+            <div class="option-items">
+              <a href="#" class="link">All</a>
+              <a href="#" class="link">Active</a>
+              <a href="#" class="link">Completed</a>
+            </div>
+            <div class="clear-complete-options">
+              <a id="clear">Clear</a>
+              <a>Completed</a>
+            </div>
+        </div>
+        </div>
+      </div>
+  </div>
+  <script defer src="main.js"></script></body>
+</html>

@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+ :root{
+    --border-color: rgba(255,255,255,0.2);
+    --very-dark-blue: hsl(235, 21%, 11%);
+    --desturated-blue: hsl(235, 24%, 19%);
+    --light-greyish: hsl(234, 39%, 85%);
+    --light-grayish-blue-hover: hsl(236,33%, 92%);
+    --dark-grayish-blue: hsl(234, 11%, 52%);
+    --very-dark-greyish-blue: hsl(233, 14%, 35%);
+    --very-dark-greyish-blue: hsl(237, 14%, 26%);
+    --box-size: 800px;
+ } 
+.footer { font-size: 11px; text-align: center; }
+.footer a { color: hsl(228, 45%, 44%); }
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 4fr 6fr;
+
+}
+
+/**********TOP SECTION**************/
+
+#top-background{
+    background-image: url('./images/bg-desktop-dark.jpg');
+    background-size: cover;
+}
+
+.create-table{
+    border-bottom: 0.5px solid var(--border-color);
+    padding: 1.6rem 0;
+    border-radius:5px;
+    width:var(--box-size);
+    background-color: hsl(235, 24%, 19%);
+    display: flex;
+}
+.heading h1{
+    color: white;
+    line-break: loose;
+}
+
+input[type='text']{
+    color: var(--light-grayish-blue-hover);
+    border: none;
+    outline: none;
+}
+.create-table input {
+    background-color: var(--desturated-blue);
+    border: none;
+    font-size: 16px;
+}
+input, label{
+    font-size: 16px;
+}
+
+
+.table-wrapper{
+    padding-left: 1.5rem;
+}
+
+
+form{
+    display: flex;
+    gap:1rem;
+}
+#top-background{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-wrapper{
+    width: var(--box-size);
+    margin-top: 1rem;
+    margin-left: 20px;
+}
+input[type='submit']{
+    color: var(--light-greyish);
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/***********************BOTTOM SECTION*************/
+
+#bottom-background{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(235, 21%, 11%);
+}
+
+.bottom-wrapper{
+    position: relative;
+    top: -4rem;
+    width: var(--box-size);
+    margin-left: 20px;
+}
+
+.input-container, .info-container{
+    border-bottom: 0.5px solid var(--border-color);
+
+    padding: 1.6rem 0;
+    border-radius:5px;
+    width: 100%;
+    background-color: hsl(235, 24%, 19%);
+    color: white;
+}
+
+.input-wrapper{
+    padding-left: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 0.1rem;
+    border-radius: 50%;
+    border: 0.25rem solid var(--border-color);
+    cursor: pointer;
+    transition: 500ms ease-out;
+}
+
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    transform: scale(0);
+    background-color: hsl(228, 45%, 44%);
+  }
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+  input[type="checkbox"]:hover {
+    border: 0.25rem solid var(--dark-grayish-blue); 
+  }
+
+
+  .info-container-wrapper{
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--light-greyish);
+  }
+  .clear-complete-options{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .info-container{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+.info-container-wrapper a, .info-container-wrapper p{
+    text-decoration: none;
+    color: var(--light-greyish);
+    transition: 300ms ease-in
+}
+
+.info-container-wrapper a:hover, .info-container-wrapper p:hover{
+    font-size: 20px;
+    cursor: pointer;
+}
+.info-container-wrapper a:link{
+    color: hsl(228, 45%, 44%);
+}
+
+.bottom-wrapper {
+    overflow: auto;
+}
+
+.clear-complete-options p {
+    margin: 0;
+    padding: 0;
+}
+
+/***Toggle Theme********/
+
+#toggle{
+    background-color: transparent;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+    border:none;
+    box-shadow: none;
+}
+
+#toggle:hover{
+    transform: scale(1.25);
+}
